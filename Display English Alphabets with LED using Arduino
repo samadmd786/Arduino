@@ -1,0 +1,679 @@
+//Display English Alphabets with LED using Arduino
+
+int UL = 2;
+int UM = 3;
+int UR = 4;
+int ML = 5;
+int MM = 6;
+int MR = 7;
+int LL = 8;
+int LM = 9;
+int LR = 10;
+int timer = 1500;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(UL, OUTPUT);
+  pinMode(UM, OUTPUT);
+  pinMode(UR, OUTPUT);
+  pinMode(ML, OUTPUT);
+  pinMode(MM, OUTPUT);
+  pinMode(MR, OUTPUT);
+  pinMode(LL, OUTPUT);
+  pinMode(LM, OUTPUT);
+  pinMode(LR, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+/*
+ `digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ 
+
+ 
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+  */
+  //A
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+  
+  // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+ //B
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, LOW);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+ 
+ //C 
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+
+ delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+  
+ //D
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, LOW);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+
+  //E
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //F
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //G
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+
+  //H
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //I
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+
+  //J
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, LOW);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+
+  //K
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //L
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //M
+ digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //N
+ digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //O
+ digitalWrite(UL, LOW);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, LOW);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //P
+ digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+ 
+ //Q
+ digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //R
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //S
+ digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //T
+ digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, LOW);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //U
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+ //V
+ digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, LOW);
+  delay(timer);
+ 
+ // clr 
+   digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+  
+  //W
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, HIGH);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, HIGH);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+  
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+ delay(timer);
+
+  //X
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, HIGH);
+  delay(timer);//
+ 
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+ 
+ //Y
+ digitalWrite(UL, HIGH);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, LOW);
+  delay(timer);
+
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+
+  //Z
+  digitalWrite(UL, HIGH);
+  digitalWrite(UM, HIGH);
+  digitalWrite(UR, HIGH);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, HIGH);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, HIGH);
+  digitalWrite(LM, HIGH);
+  digitalWrite(LR, HIGH);
+  delay(timer);
+
+ // clr 
+  digitalWrite(UL, LOW);
+  digitalWrite(UM, LOW);
+  digitalWrite(UR, LOW);
+  digitalWrite(ML, LOW);
+  digitalWrite(MM, LOW);
+  digitalWrite(MR, LOW);
+  digitalWrite(LL, LOW);
+  digitalWrite(LM, LOW);
+  digitalWrite(LR, LOW); 
+  delay(timer);
+}
+
+
